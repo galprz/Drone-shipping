@@ -164,6 +164,12 @@ after takeoff the drone start to scan the area and then decide where to go base 
 
 [![Flight 2](https://j.gifs.com/Y6mY9n.gif)](https://youtu.be/AuR8C7m42ZQ)
 
+## Our Drone
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/galprz/DroneProject/master/images/our-drone.jpg" width="800"/>
+</p>
+
 ## Useful links
 * [Dronekit](http://python.dronekit.io/)
 * [MavProxy](http://ardupilot.github.io/MAVProxy/html/index.html)
@@ -172,9 +178,3 @@ after takeoff the drone start to scan the area and then decide where to go base 
 * [Mission planner](http://ardupilot.org/planner/index.html)
 * [Calibrate the camera](http://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html)
 * [Calibrate the compose and the GPS](http://ardupilot.org/copter/docs/common-compass-calibration-in-mission-planner.html)
-
-## Our Drone
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/galprz/DroneProject/master/images/communication.jpg" width="600"/>
-</p>
