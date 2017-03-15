@@ -120,6 +120,14 @@ It should Look like this when you run http-server from the terminal  :
   <img src="https://raw.githubusercontent.com/galprz/DroneProject/master/images/http-server.jpg" width="600"/>
 </p>
 
+If you already successfully established communication with the drone you ready to connect else just jump back to the [Communication](#communication) section.<br>
+Connect the ui to the browser by following those steps:
+
+1. Navigate to the [browser](http://localhost:5555) open the console and load the mission by running
+loadMission("FindAndLandMission").
+2. Connect to the drone by running client.connect().
+3. Start the mission by running client.send('{"type" : "CMDTypes.FIND_AND_LAND_MISSION" , "body": {"alt":2, "distance": 100}}').
+
 And after the mission start
 
 <p align="center">
@@ -128,18 +136,9 @@ And after the mission start
 
 And then when you run the mission from the browser :
 
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/galprz/DroneProject/master/images/state-machine.jpg" width="600"/>
 </p>
-
-If you already successfully established communication with the drone you ready to connect else just jump back to the [Communication](#communication) section.<br>
-Connect the ui to the browser by following those steps:
-
-1. Navigate to the [browser](http://localhost:5555) open the console and load the mission by running
-loadMission("FindAndLandMission").
-2. Connect to the drone by running client.connect().
-3. Start the mission by running client.send('{"type" : "CMDTypes.FIND_AND_LAND_MISSION" , "body": {"alt":2, "distance": 100}}').
 
 **Note** : the 'Find and land' mission fits to our  specific drone . <br> the camera sits on the drone at specific rotation and we analyzing the image base on that and command the drone to move in order to minimize the distance to the center of the target.
 
