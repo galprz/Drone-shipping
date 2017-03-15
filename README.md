@@ -6,7 +6,7 @@
 [![Last build check](https://img.shields.io/badge/build-pass%20--%20last%20check%2003%2F17-green.svg)]()
 [![Platform](https://img.shields.io/badge/platfrom-%20ubuntu%20%7C%20mac%20-lightgrey.svg)]()
 
-## What is it?
+## What it is
 
 This is an open source project that is intended to help people to create autonomous drone missions with a [pixhawk](https://pixhawk.org/) controller.
 The project is written in C++ and Python in order to enable fast image processing and operating the drone in real time.
