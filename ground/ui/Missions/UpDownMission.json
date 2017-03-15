@@ -1,0 +1,27 @@
+{
+  "states":
+    [
+      {
+        "id" : 0,
+        "x" : 150,
+        "y" : 250,
+        "label" : "Take off",
+        "start" : true,
+        "self_link" : "Failure",
+        "transitions" : [
+          {
+            "to" : 1,
+            "label" : "Success"
+          }
+        ]
+      },
+      {
+        "id" : 1,
+        "x" : 550,
+        "y" : 250,
+        "label" : "Land",
+        "final" : true,
+        "self_link" : "Failure"
+      }
+    ]
+}

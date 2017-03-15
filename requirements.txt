@@ -1,0 +1,6 @@
+websocket-client
+websocket-server
+enum34
+dronekit
+dronekit-sitl
+numpy
