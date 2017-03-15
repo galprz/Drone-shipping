@@ -1,0 +1,11 @@
+.idea/
+*.pyc
+*.pyo
+logs/
+*.o
+*.so
+*.DS_Store
+*.xcodeproj/
+*.orig
+*.gch
+flights_video/
