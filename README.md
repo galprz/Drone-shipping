@@ -163,13 +163,15 @@ you can find our final project presentation, one version is a pdf and one is pow
 ## Video
 
 ### Channels
-we divid the video to channels . there is 2 channels in the system for now but you can add more.
-<b>The DEFAULT channel:</b><br>
+We divid the video stream to channels.<br>
+There are 2 channels in the system for now but you can add more.
+
+<br><br><b>The DEFAULT channel:</b><br>
 when you want to get the original video from the camera you should read the frame from the DEFAULT channel .
-<b>The DEBUG channel:</b><br>
+<br><br><b>The DEBUG channel:</b><br>
 you can apply collection of modifiers to that channel . before the video provider provides a frame from that channel (or from any custom channel) it will change the frame according to the that collection of modifiers that applied for that channel.
 
-<b>create custom channel:</b><br>
+<br><br><b>create custom channel:</b><br>
 You can create any custom channel very easily and the apply any collection of modifiers that you want like the DEBUG channel . take a look in the vide_provider.hpp for more info.
 
 ### Video stream
