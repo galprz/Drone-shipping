@@ -79,7 +79,7 @@ Or something like that if you do :
   <img src="https://raw.githubusercontent.com/galprz/DroneProject/master/images/vehicle-connected-with-camera.jpg" width="600"/>
 </p>
 
-<b>Working with a real pixhawk instead of simulator:</b><br>
+<b>Working with a real pixhawk instead of a simulator:</b><br>
 If you working with Pixhawk and you have Odroid computer (or any other linux machine) that connects to it
 You can run that line to connect the computer to the pixhawk and start send it commands.
 
@@ -165,12 +165,12 @@ you can find our final project presentation, one version is a pdf and one is pow
 We divid the video stream to channels.<br>
 There are 2 channels in the system for now but you can add more.
 
-<br><br><b>The DEFAULT channel:</b><br>
+<b>The DEFAULT channel:</b><br>
 when you want to get the original video from the camera you should read the frame from the DEFAULT channel .
 <br><br><b>The DEBUG channel:</b><br>
 you can apply collection of modifiers to that channel . before the video provider provides a frame from that channel (or from any custom channel) it will change the frame according to the that collection of modifiers that applied for that channel.
 
-<br><br><b>create custom channel:</b><br>
+<b>Create custom channel:</b><br>
 You can create any custom channel very easily and the apply any collection of modifiers that you want like the DEBUG channel . take a look in the vide_provider.hpp for more info.
 
 ### Video stream
