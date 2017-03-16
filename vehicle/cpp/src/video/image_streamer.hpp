@@ -14,7 +14,11 @@
 #include "image_streamer_config.hpp"
 #include "cpp_service.hpp"
 #define IMAGE_STREAMER_TAG "ImageStreamer"
-
+/**
+ * DEPRECATED
+ * send images to video server
+ * we dosen't use that module any more but we left it any way in case someone would need it
+ */
 namespace VehicleModule {
     namespace Video{
         class ImageStreamer : public Common::CppService{

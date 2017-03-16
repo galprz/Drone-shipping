@@ -10,7 +10,9 @@
 #include "../common/vehicle_module_exception.hpp"
 
 #define VIDEO_RECORDER_TAG "VideoRecoder"
-
+/**
+ * recording the video to file with avi extension
+ */
 namespace VehicleModule {
     namespace Video{
         class VideoRecorder {
@@ -24,7 +26,13 @@ namespace VehicleModule {
             _running(false),
             _filename(filename)
             {}
+            /**
+             * start recording the video to file name <filename> infinite loop till stop_recording_video get called
+             */
             void start_recording_video();
+            /**
+             * stop recording the video
+             */
             void stop_recording_video();
             VideoRecorder(VideoRecorder const&) = delete;
             void operator=(VideoRecorder const&) = delete;

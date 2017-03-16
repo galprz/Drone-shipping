@@ -20,7 +20,9 @@
 #include <boost/thread/thread.hpp>
 
 #define VIDEO_STREAMER_TAG "VideoStreamer"
-
+/**
+ * Sends the stream of the video over udp to the server
+ */
 namespace VehicleModule {
     namespace Video{
         class VideoStreamer {
@@ -33,7 +35,13 @@ namespace VehicleModule {
             VideoStreamer(const std::string& addr , int port):
             _sender(addr, port),_running(false)
             {}
+            /**
+             * start to send the video to udp:addr:port infinite loop till stop_sending_video get called
+             */
             void start_sending_video();
+            /**
+             * stoping the video streaming
+             */
             void stop_sending_video();
             VideoStreamer(VideoStreamer const&) = delete;
             void operator=(VideoStreamer const&) = delete;

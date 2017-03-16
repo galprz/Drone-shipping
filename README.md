@@ -2,13 +2,12 @@
   <img src="https://raw.githubusercontent.com/galprz/DroneProject/master/images/logo.png" width="600"/>
 </p>
 
-
 [![Last build check](https://img.shields.io/badge/build-pass%20--%20last%20check%2003%2F17-green.svg)]()
 [![Platform](https://img.shields.io/badge/platfrom-%20ubuntu%20%7C%20mac%20-lightgrey.svg)]()
 
 ## What it is
 
-This is an open source project that is intended to help people to create autonomous drone missions with a [pixhawk](https://pixhawk.org/) controller.
+This is an open source project that intended to help people to create autonomous drone missions that operate with a [pixhawk](https://pixhawk.org/) controller.
 The project is written in C++ and Python in order to enable fast image processing and operating the drone in real time.
 The project also includes built in missions. Our goal was to fly to a specific GPS location, scan the area for a bullseye target and land on the center of the target.
 You can use the framework to create your own missions.
