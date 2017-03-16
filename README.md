@@ -162,6 +162,16 @@ you can find our final project presentation, one version is a pdf and one is pow
 
 ## Video
 
+### Channels
+we divid the video to channels . there is 2 channels in the system for now but you can add more.
+<b>The DEFAULT channel:</b><br>
+when you want to get the original video from the camera you should read the frame from the DEFAULT channel .
+<b>The DEBUG channel:</b><br>
+you can apply collection of modifiers to that channel . before the video provider provides a frame from that channel (or from any custom channel) it will change the frame according to the that collection of modifiers that applied for that channel.
+
+<b>create custom channel:</b><br>
+You can create any custom channel very easily and the apply any collection of modifiers that you want like the DEBUG channel . take a look in the vide_provider.hpp for more info.
+
 ### Video stream
 when you runs the drone code and get logs that every thing good with the camera and the video provider
 started to get frame for it you can start the video_server that sits under the ground folder
@@ -171,7 +181,7 @@ cd ground/video_server
 ./server 10000
 ```
 And you should be able to see a live stream video from your drone
-The video streamer sends the video stream from DEBUG channel so when you would be able to apply
+The video streamer sends the video stream from DEBUG channel so you would be able to apply
 any masks filters and transformations on the video stream before you get it on the ground
 see the scan state in the find_and_land_mission for example.
 
