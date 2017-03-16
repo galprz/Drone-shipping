@@ -150,9 +150,11 @@ bool VideoProvider::get_frame(cv::Mat& frame , Channel channel,long long& image_
 
 void VideoProvider::set_channel(Channel channel,const Modifiers::Collection & collection)
 {
-    _channels_read_write_lock.write_lock();
-    _channels[channel] = collection;
-    _channels_read_write_lock.write_unlock();
+    if(channel != Channel::DEFAULT){
+        _channels_read_write_lock.write_lock();
+        _channels[channel] = collection;
+        _channels_read_write_lock.write_unlock();
+    }
 }
 
 void VideoProvider::clear_channel(Channel channel)
@@ -187,10 +189,6 @@ int VideoProvider::get_width() const{
 
 int VideoProvider::get_height() const{
     return _height;
-}
-
-int VideoProvider::get_codec_type() const{
-    return _codec_type;
 }
 
 VideoProvider::~VideoProvider(){

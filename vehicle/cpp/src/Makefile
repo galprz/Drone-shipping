@@ -23,8 +23,8 @@ else
 	SONAME = -soname,$(TARGET)
 endif
 
-OPENCV_INCLUDE = `pkg-config --cflags opencv3`
-OPENCV_LIB = `pkg-config --libs opencv3`
+OPENCV_INCLUDE = `pkg-config --cflags opencv`
+OPENCV_LIB = `pkg-config --libs opencv`
 
 COMPILE_FLAGS =  -O -std=c++11 -I$(PYTHON_INCLUDE) -I$(BOOST_PYTHON_INCLUDE) -fPIC $(OPENCV_INCLUDE) -I../../../common/cpp/src/ -I./common/ -I./mission/ -I./video/ -I./algorithm/ -I$(BOOST_INCLUDE)
 LIBRARY_FLAGS = -shared -Wl,$(SONAME) -L$(BOOST_PYTHON_LIB) -lboost_python -L$(PYTHON_LIB) -lpython$(PYTHON_VERSION) $(OPENCV_LIB) -L$(USER_LOCAL_LIB) -lcommon -L$(BOOST_LIB) -lboost_system -llapack -lblas -larmadillo

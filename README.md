@@ -80,6 +80,14 @@ Or something like that if you do :
   <img src="https://raw.githubusercontent.com/galprz/DroneProject/master/images/vehicle-connected-with-camera.jpg" width="600"/>
 </p>
 
+<b>Working with a real pixhawk instead of simulator:</b><br>
+If you working with Pixhawk and you have Odroid computer (or any other linux machine) that connects to it
+You can run that line to connect the computer to the pixhawk and start send it commands.
+
+```
+python -m vehicle.python.main /dev/ttyUSB0,115200 <ground_ip>
+```
+
 ### Ground
 
 #### Communication
@@ -152,9 +160,33 @@ Finally you can try to create your own simple mission.
 Under ```project_root/presentation```<br>
 you can find our final project presentation, one version is a pdf and one is power point.
 
-## Videos
+## Video
 
-Find and land mission's video from the drone camera (without the go to GPS part)
+###Video stream
+when you runs the drone code and get logs that every thing good with the camera and the video provider
+started to get frame for it you can start the video_server that sits under the ground folder
+run:
+```
+cd ground/video_server
+./server 10000
+```
+And you should be able to see a live stream video from your drone
+The video streamer sends the video stream from DEBUG channel so when you would be able to apply
+any masks filters and transformations on the video stream before you get it on the ground
+see the scan state in the find_and_land_mission for example.
+
+###Recording the video
+The video recorder can record the video and save it under flights_video folder . <br>
+In order to start recording you need to put the --record flag when you run the drone code .<br>
+```
+python -m vehicle.python.main tcp:127.0.0.1:5760 127.0.0.1 --record
+
+```
+The video recorder reads the video from the DEAFULT channel so he gets the original video without any modifications. if you want to modify the video before saving it to disk create RECORD channel and set
+collection of modifiers to that channel and change the video recorder to read from that channel instead.
+
+###Videos from our mission
+Find and land mission's videos from the drone camera (without the go to GPS part)
 After takeoff, the drone starts to scan the area and then decides where to go base on the image algorithm that tells him where is the center of the target.
 
 **Click on the GIF to see the full video**:

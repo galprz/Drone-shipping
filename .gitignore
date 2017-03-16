@@ -9,3 +9,6 @@ logs/
 *.orig
 *.gch
 flights_video/
+ground/video_server/server
+ground/video_server/CMakeCache.txt
+ground/video_server/CMakeFiles/
