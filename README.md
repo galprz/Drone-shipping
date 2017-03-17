@@ -39,15 +39,6 @@ We’ve created this project in the [Geomatric Image Processing lab at the Techn
 
 You can build the project by running ```sudo make``` in the root directory
 
-## Creating missions for the drone
-
-The system provides an easy and convenient way to create missions for your drone.<br>
-Every mission can represented by a state machine every state in the state machine represent a state in the drone's mission.<br>
-you can add mission by adding it to the mission folder under vehicle/cpp/src/mission/.
-just follow the UP_AND_DOWN_MISSION vehicle/cpp/src/mission/up_and_down_mission.hpp (that is a simple mission with 2 states takeoff and land) mission and try to create your own simple mission.<br>
-
-In the next section it will become more clear how to run a mission
-
 ## Components & Features
 
 We divided the system to 3 main components:
@@ -162,6 +153,14 @@ And then when you run the mission from the browser :
 
 To better understand the architecture of that project start by reading the [project's presentation](#project-presentation) that explains about all of the components. <br>Then you can take a look at the missions that we’ve already created under project_root/vehicle/cpp/src/mission. (for example understand how 'Up and down' mission works).<br>
 Finally you can try to create your own simple mission.
+
+## Creating missions for the drone
+
+The system provides an easy and convenient way to create missions for your drone.<br>
+Every mission can represented by a state machine every state in the state machine represent a state in the drone's mission.<br>
+you can add mission by adding it to the mission folder under vehicle/cpp/src/mission/.
+you can take a look on the UP_AND_DOWN_MISSION vehicle/cpp/src/mission/up_and_down_mission.hpp ,that is a simple mission with 2 states takeoff and land.<br>
+just follow that mission and try to create your own simple mission.<br>
 
 ## Project presentation
 
