@@ -39,6 +39,15 @@ We’ve created this project in the [Geomatric Image Processing lab at the Techn
 
 You can build the project by running ```sudo make``` in the root directory
 
+## Creating missions for the drone
+
+The system provides an easy and convenient way to create missions for your drone.<br>
+Every mission can represented by a state machine every state in the state machine represent a state in the drone's mission.<br>
+you can add mission by adding it to the mission folder under vehicle/cpp/src/mission/.
+just follow the UP_AND_DOWN vehicle/cpp/src/mission/up_and_down.hpp (that is a simple mission with 2 states takeoff and land) mission and try to create your own simple mission.<br>
+
+In the next section it will become more clear how to run a mission
+
 ## Components & Features
 
 We divided the system to 3 main components:
