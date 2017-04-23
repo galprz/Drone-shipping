@@ -157,10 +157,11 @@ Finally you can try to create your own simple mission.
 ## Creating missions for the drone
 
 The system provides an easy and convenient way to create missions for your drone.<br>
-Every mission can represented by a state machine every state in the state machine represent a state in the drone's mission.<br>
+Every mission can be represented by a state machine. Every state in the state machine represents a state in the drone's mission.<br>
 you can add mission by adding it to the mission folder under vehicle/cpp/src/mission/.
 you can take a look on the UP_AND_DOWN_MISSION vehicle/cpp/src/mission/up_and_down_mission.hpp ,that is a simple mission with 2 states takeoff and land.<br>
-just follow that mission and try to create your own simple mission.<br>
+Under ‘tools’ folder, you can find a script that will help you create mission. In order to use the tool, you need to create a json file (please refer to the examples in ‘ground/ui/Mission’).<br>
+After creating the json file, run the script. The outputs are .hpp .cpp files that you can use. The only thing left for you is to implement the logic inside. Enjoy :)
 
 ## Project presentation
 
