@@ -18,7 +18,7 @@ We’ve created this project in the [Geomatric Image Processing lab at the Techn
 ## Requirements
 
 1. g++
-    [install g++ for mac](http://www-scf.usc.edu/~csci104/20142/installation/gccmac.html)
+    [install g++ for mac](http://www-scf.usc.edu/~csci104/20142/installation/gccmac.html) 
     or install for ubuntu : apt-get install g++
 2. [boost](http://www.boost.org/)  you can install it with apt-get in linux or with brew in mac.
 3. [boost-python](http://www.boost.org/doc/libs/1_63_0/libs/python/doc/html/index.html) - to link cpp with python [check that github project for examples](https://github.com/TNG/boost-python-examples)
